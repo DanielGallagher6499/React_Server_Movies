@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header'
+import Create from './components/Create'
+import Read from './components/Read'
 import Content from './components/Content'
 import Footer from './components/Footer'
 //Importing bootstrap
@@ -23,9 +25,9 @@ class App extends React.Component {
           </Navbar>
 
           <Switch>
-            <Route exact path="/" component={Header} />
-            <Route path="/create" component={Footer} />
-            <Route path="/read" component={Content} />
+            <Route exact path="/" component={Content} />
+            <Route path="/create" component={Create} />
+            <Route path="/read" component={Read} />
           </Switch>
       </div>
       </BrowserRouter>
